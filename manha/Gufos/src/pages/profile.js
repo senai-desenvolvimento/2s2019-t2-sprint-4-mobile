@@ -3,7 +3,7 @@ import {Text} from 'react-native';
 
 class Profile extends Component {
   render() {
-    return <Text>Profile</Text>;
+    return <Text>Perfil</Text>;
   }
 }
 

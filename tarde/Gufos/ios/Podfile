@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'Gufos' do
-  # Pods for Gufos
+target 'gufos' do
+  # Pods for gufos
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,7 +27,7 @@ target 'Gufos' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'GufosTests' do
+  target 'gufosTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -35,10 +35,10 @@ target 'Gufos' do
   use_native_modules!
 end
 
-target 'Gufos-tvOS' do
-  # Pods for Gufos-tvOS
+target 'gufos-tvOS' do
+  # Pods for gufos-tvOS
 
-  target 'Gufos-tvOSTests' do
+  target 'gufos-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

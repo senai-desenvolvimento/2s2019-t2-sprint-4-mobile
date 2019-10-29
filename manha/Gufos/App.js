@@ -19,18 +19,19 @@ import {
 const App = () => {
   return (
     <Fragment>
-      {/* <StatusBar barStyle="dark-content" /> */}
-      <StatusBar hidden />
-      {/* <StatusBar backgroundColor="blue" barStyle="light-content" /> */}
+      <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.corVermelha}>Hello World</Text>
+          {global.HermesInternal == null ? null : (
+            <View style={styles.engine}>
+              <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
+          )}
+          <View style={styles.body}>
+            <Text>Hello World</Text>
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -39,10 +40,6 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  corVermelha: {
-    backgroundColor: 'yellow',
-    color: 'red'
-  },
   scrollView: {
     backgroundColor: Colors.lighter,
   },

@@ -27,4 +27,4 @@ O desafio é que vocês consigam criar pelo mobile esse filtro, mas outra implem
 
 Desafios Super Extras
 Criar um drawer navigation para que uma aba apareça com as informações sobre a clínica.
-
+Alterar o BackEnd e o mobile para que possa ser incluido uma nova Especialidade.

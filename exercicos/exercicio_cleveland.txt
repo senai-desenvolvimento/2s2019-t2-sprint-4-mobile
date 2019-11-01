@@ -1,0 +1,30 @@
+Uma clínica chamada Cleveland deseja disponibilizar a lista de médicos que atendem na clínica.
+Você deverá ser capaz de construir a seguinte estrutura:
+
+Banco de Dados 
+Criar a tabela de médicos que contenha os seguintes campos: nome, data de nascimento e crm.
+
+BackEnd
+Criar uma API que contenha o seguinte endpoint.
+
+Listar todos os médicos da plataforma.
+GET /api/medicos
+
+Mobile
+Você deverá criar um aplicativo mobile a fim de apresentar a lista de médicos da clínica.
+
+Dica:
+Para que você consiga acesso pela rede, no launchSettings.json, ao invés de localhost:5000, troque o localhost para o ip da sua máquina. Caso não lembre, abra o cmd e digite ipconfig para apresentar a lista de configurações.
+
+Desafios Extras
+No banco de dados e na API, você deverá ser capaz de criar um item para informar se o médico está ativo ou inativo na clínica.
+
+No banco de dados e na API, cada médico deverá ter somente uma especialidade (ex.: ginecologia, obstetrícia, clínico geral).
+Ao realizar a requisição, GET /api/medicos, apresentar no mobile, a habilidade de cada médico vinculado.
+
+No mobile, você deverá ser capaz de criar um filtro para buscar os médicos por especialidade e além disso, listar somente os médicos ativos.
+O desafio é que vocês consigam criar pelo mobile esse filtro, mas outra implementação é que pode ser feita pelo backend.
+
+Desafios Super Extras
+Criar um drawer navigation para que uma aba apareça com as informações sobre a clínica.
+
